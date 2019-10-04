@@ -10,8 +10,19 @@ require_once('view.php');
 
 $actionarray= explode(".php",$_SERVER['REQUEST_URI']);
 $action=$actionarray[1];
-switch($action){
-    case "/articulo":
-        render 
-}
-?>
+
+
+ switch ($action) {
+    case '/articulo':
+    render(getArticulo($conex), "template.html");
+        break;
+    
+        case '/foto':
+        render(getFoto($conex), "template01.html");
+        break;
+        case '/empresaF':
+        render(getEmpresaF($conex), "template03.html");
+        break;
+    default:
+    render($diccionario, "template.html"); 
+

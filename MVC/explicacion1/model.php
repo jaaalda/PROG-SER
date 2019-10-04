@@ -1,23 +1,19 @@
 <?php
+require("conexion.php");
 
-//conectar bbdd
-
+$con=new Conexion();
 function getArticulo($conexion){
-    return $diccionario;
+    $diccionario=$conexion->conexion->query("SELECT * FROM articulo");
+    return $diccionario->fetch_assoc();
 }
-
 function getFoto($conexion){
-    return $diccionario;
+    $diccionario2=$conexion->conexion->query("SELECT * FROM foto");
+    return $diccionario2->fetch_assoc();
 }
-
-function getDefault($conexion){
-    return $diccionario;
+function getEmpresaF($conexion){
+    $diccionario3=$conexion->conexion->query("SELECT * FROM empresa");
+    return $diccionario3->fetch_assoc();
 }
-
-
-
-
-
 
 
 
