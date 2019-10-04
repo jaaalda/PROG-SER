@@ -10,6 +10,8 @@ require_once('view.php');
 
 $actionarray= explode(".php",$_SERVER['REQUEST_URI']);
 $action=$actionarray[1];
-
-echo $action;
+switch($action){
+    case "/articulo":
+        render 
+}
 ?>

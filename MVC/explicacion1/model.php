@@ -1,5 +1,28 @@
 <?php
 
+//conectar bbdd
+
+function getArticulo($conexion){
+    return $diccionario;
+}
+
+function getFoto($conexion){
+    return $diccionario;
+}
+
+function getDefault($conexion){
+    return $diccionario;
+}
+
+
+
+
+
+
+
+
+
+
 $diccionario=array(
     'titulo' => 'WUEE SALE EL TEXTO LOCO',
     'contenido' => 'EHHH SALE EL CONTENIDO',
