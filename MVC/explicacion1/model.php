@@ -1,7 +1,8 @@
 <?php
 require("conexion.php");
 
-$con=new Conexion();
+$conex=new Conexion();
+
 function getArticulo($conexion){
     $diccionario=$conexion->conexion->query("SELECT * FROM articulo");
     return $diccionario->fetch_assoc();
