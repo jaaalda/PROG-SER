@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>MVC con acceso a Datos</title>
+    </head>
+    
+    <body>
+    <h1>Clientes de la empresa</h1>
+    <table>
+        <tr>
+            <th>Eliminar</th>
+            <th>CODIGO</th>
+            <th>NOMBRE</th>
+            <th>TELEFONO</th>
+        </tr>
+        {data_table_init}
+        <tr>
+            <td><a href="controller.php/borra/{CLIENTE_COD}">X</a></td>
+            <td>{CLIENTE_COD}</td> <!-- Añade código para convertir en enlace-->
+            <td>{NOMBRE}</td>
+            <td>{TELEFONO}</td>
+        </tr>
+        {data_table_end}
+    </table>
+    </body>
+</html>
+
